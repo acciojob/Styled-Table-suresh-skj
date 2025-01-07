@@ -2,14 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Styled Table - Game Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+        td {
+            font-size: 14px;
+            color: #333;
+        }
+        caption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+    <table>
+        <caption>Game Statistics</caption>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Games Played</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Win Rate (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Player 1</td>
+                <td>20</td>
+                <td>15</td>
+                <td>5</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>Player 2</td>
+                <td>18</td>
+                <td>10</td>
+                <td>8</td>
+                <td>55.6</td>
+            </tr>
+            <tr>
+                <td>Player 3</td>
+                <td>25</td>
+                <td>20</td>
+                <td>5</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Player 4</td>
+                <td>15</td>
+                <td>8</td>
+                <td>7</td>
+                <td>53.3</td>
+            </tr>
+            <tr>
+                <td>Player 5</td>
+                <td>30</td>
+                <td>25</td>
+                <td>5</td>
+                <td>83.3</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
